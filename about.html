@@ -91,6 +91,36 @@
     </div>
   </section>
 
+  <!-- MISSION & VISION -->
+  <section class="mission-vision">
+    <div class="container">
+      <div class="mv__grid">
+        <div class="mv__card">
+          <p class="section-eyebrow">Our Mission</p>
+          <p class="mv__text">
+            CloudForge exists to simplify cloud infrastructure for modern engineering teams.
+            We help organisations cut through complexity, build reliable systems, and focus
+            on what matters most.
+          </p>
+          <p class="mv__text">
+            We believe great work is an act of service. We approach every engagement with
+            integrity, clarity, and a commitment to doing the work right — delivering
+            solutions we stand behind.
+          </p>
+        </div>
+        <div class="mv__card">
+          <p class="section-eyebrow">Our Vision</p>
+          <p class="mv__text">
+            We aim to continue building with purpose. To evolve CloudForge from a consulting
+            firm into a platform — building tools, automation, and systems that solve real
+            infrastructure challenges at scale while staying grounded in the values that
+            guide our work, and committed to serving others with purpose and integrity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOUNDERS -->
   <section class="founders">
     <div class="container">
@@ -100,7 +130,7 @@
 
         <div class="founder-card">
           <div class="founder-card__avatar">
-            <div class="avatar-placeholder">JP</div>
+            <img src="assets/jason.jpeg" alt="Jason Phillip" class="founder-card__photo">
           </div>
           <h3>Jason Phillip</h3>
           <p class="founder-card__role">Co-Founder</p>
@@ -113,7 +143,7 @@
 
         <div class="founder-card">
           <div class="founder-card__avatar">
-            <div class="avatar-placeholder">DN</div>
+            <img src="assets/domonic.jpg" alt="Domonic Neal" class="founder-card__photo">
           </div>
           <h3>Domonic Neal</h3>
           <p class="founder-card__role">Co-Founder</p>
@@ -262,5 +292,23 @@
       this.setAttribute('aria-expanded', !expanded);
       nav.classList.toggle('nav__links--open');
     });
+  </script>
+
+  <script>
+    // Theme toggle
+    (function() {
+      var saved = localStorage.getItem('cf-theme');
+      if (saved === 'light') document.body.classList.add('light');
+      
+      var btn = document.querySelector('.theme-toggle');
+      btn.textContent = document.body.classList.contains('light') ? '🌙' : '☀️';
+      
+      btn.addEventListener('click', function() {
+        document.body.classList.toggle('light');
+        var isLight = document.body.classList.contains('light');
+        localStorage.setItem('cf-theme', isLight ? 'light' : 'dark');
+        btn.textContent = isLight ? '🌙' : '☀️';
+      });
+    })();
   </script>
 </body>

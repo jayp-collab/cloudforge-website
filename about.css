@@ -85,6 +85,17 @@
   margin-bottom: 20px;
 }
 
+.founder-card__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid rgba(61,168,213,0.3);
+}
+
 .avatar-placeholder {
   width: 80px;
   height: 80px;
@@ -272,6 +283,41 @@
 
 @media (max-width: 768px) {
   .origin__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mission & Vision */
+.mission-vision {
+  padding: 80px 24px;
+}
+
+.mv__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.mv__card {
+  background: var(--navy-light);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 36px;
+}
+
+.mv__text {
+  color: var(--gray-light);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.mv__text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .mv__grid {
     grid-template-columns: 1fr;
   }
 }

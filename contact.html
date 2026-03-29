@@ -153,5 +153,23 @@
       nav.classList.toggle('nav__links--open');
     });
   </script>
+
+  <script>
+    // Theme toggle
+    (function() {
+      var saved = localStorage.getItem('cf-theme');
+      if (saved === 'light') document.body.classList.add('light');
+      
+      var btn = document.querySelector('.theme-toggle');
+      btn.textContent = document.body.classList.contains('light') ? '🌙' : '☀️';
+      
+      btn.addEventListener('click', function() {
+        document.body.classList.toggle('light');
+        var isLight = document.body.classList.contains('light');
+        localStorage.setItem('cf-theme', isLight ? 'light' : 'dark');
+        btn.textContent = isLight ? '🌙' : '☀️';
+      });
+    })();
+  </script>
 </body>
 </html>
