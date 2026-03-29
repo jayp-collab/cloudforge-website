@@ -86,14 +86,18 @@
 }
 
 .founder-card__photo {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top;
+  object-position: center center;
   margin: 0 auto;
   display: block;
   border: 3px solid rgba(61,168,213,0.3);
+}
+
+.founder-card__photo--top {
+  object-position: top center;
 }
 
 .avatar-placeholder {
