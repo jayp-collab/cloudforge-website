@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudForge Consulting — Homepage Mockup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> CloudForge
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Book a Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Cloud Infrastructure &amp; DevOps Consulting</p>
+      <h1 class="hero__title">
+        Your infrastructure should<br>
+        <span class="gradient-text">accelerate your product</span>,<br>
+        not slow it down.
+      </h1>
+      <p class="hero__subtitle">
+        We help engineering teams design, deploy, and optimise production-ready
+        AWS environments — so your engineers can stop firefighting infrastructure
+        and get back to building what matters.
+      </p>
+      <div class="hero__cta">
+        <a href="contact.html" class="btn btn--primary">Book a Free Discovery Call</a>
+        <a href="#" class="btn btn--ghost">See How We Work →</a>
+      </div>
+      <p class="hero__proof">Founded by former AWS engineers with deep expertise across cloud architecture, Kubernetes, DevOps, cost optimisation, and infrastructure automation.</p>
+    </div>
+    <!-- Decorative grid background -->
+    <div class="hero__grid" aria-hidden="true"></div>
+  </header>
+
+  <!-- ===== PROBLEM STATEMENT ===== -->
+  <section class="problem">
+    <div class="container">
+      <p class="section-eyebrow">Sound familiar?</p>
+      <h2 class="section-title">Your AWS bill is climbing, deployments keep breaking, and the team that was hired to build products is stuck keeping the lights on. Sound about right?</h2>
+      <div class="problem__cards">
+        <div class="problem__card">
+          <span class="problem__icon problem__icon--styled">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </span>
+          <h3>Constant Firefighting</h3>
+          <p>Pod failures, networking issues, deployment rollbacks, CI/CD breakages — your engineers are stuck in reactive mode, troubleshooting infrastructure problems they weren't hired to solve.</p>
+        </div>
+        <div class="problem__card">
+          <span class="problem__icon problem__icon--styled">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </span>
+          <h3>Runaway Cloud Costs</h3>
+          <p>Over-provisioned clusters, idle resources, redundant services, and no visibility into what's actually driving the bill. Costs keep climbing with no clear path to optimisation.</p>
+        </div>
+        <div class="problem__card">
+          <span class="problem__icon problem__icon--styled">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </span>
+          <h3>Complexity Without the Payoff</h3>
+          <p>Service meshes, multi-cluster architectures, and tooling sprawl that made sense on paper but now creates more operational burden than business value. The platform outgrew the team maintaining it.</p>
+        </div>
+        <div class="problem__card">
+          <span class="problem__icon problem__icon--styled">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </span>
+          <h3>Knowledge Gaps</h3>
+          <p>Engineers managing Kubernetes clusters with little to no hands-on experience — learning on the fly during production incidents, piecing together solutions from docs and forums under pressure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services">
+    <div class="container">
+      <p class="section-eyebrow">What we do</p>
+      <h2 class="section-title">Three services. One infrastructure lifecycle.</h2>
+      <div class="services__grid">
+
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-card__number">01</div>
+          <h3 class="service-card__title">Infrastructure Deployment</h3>
+          <p class="service-card__desc">
+            Production-ready AWS environments built with Terraform. Cloud networking,
+            compute, CI/CD pipelines, monitoring, and security — delivered with full
+            documentation and operational runbooks.
+          </p>
+          <ul class="service-card__includes">
+            <li>Architecture design session</li>
+            <li>Terraform IaC repository</li>
+            <li>Monitoring &amp; alerting stack</li>
+            <li>Operational runbook</li>
+          </ul>
+          <p class="service-card__price"><a href="services.html">Learn more →</a></p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-card__number">02</div>
+          <h3 class="service-card__title">Troubleshooting &amp; Support</h3>
+          <p class="service-card__desc">
+            Rapid-response Kubernetes and AWS troubleshooting. We diagnose root causes,
+            restore stability, and hand you a remediation report — not a mystery.
+          </p>
+          <ul class="service-card__includes">
+            <li>Structured diagnostic workflow</li>
+            <li>Root cause analysis report</li>
+            <li>Remediation steps</li>
+            <li>Hourly or sprint-based pricing</li>
+          </ul>
+          <p class="service-card__price"><a href="services.html">Learn more →</a></p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card service-card--highlight">
+          <div class="service-card__number">03</div>
+          <h3 class="service-card__title">Architecture Efficiency Audit</h3>
+          <p class="service-card__desc">
+            A deep-dive into your AWS environment to find cost savings, simplify architecture,
+            and eliminate operational risk. Comes with a money-back guarantee.
+          </p>
+          <ul class="service-card__includes">
+            <li>Utilisation &amp; cost analysis</li>
+            <li>Complexity assessment</li>
+            <li>Optimisation roadmap</li>
+            <li>Full refund if no savings found</li>
+          </ul>
+          <p class="service-card__price"><a href="services.html">Learn more →</a></p>
+        </div>
+
+      </div>
+      <div class="services__guarantee">
+        <span class="services__guarantee-icon">&#9745;</span>
+        <p>Our Architecture Efficiency Audit comes with a money-back guarantee — if we can't identify cost savings, you get a full refund. <a href="services.html">See details →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFFERENTIATOR / WHY US ===== -->
+  <section class="why-us">
+    <div class="container">
+      <div class="why-us__grid">
+        <div class="why-us__text">
+          <p class="section-eyebrow">Why CloudForge</p>
+          <h2 class="section-title">Built by engineers who<br>lived inside AWS.</h2>
+          <p>
+            CloudForge was founded by two former cloud engineers at Amazon Web Services.
+            We've seen the patterns — the over-engineering, the runaway costs, the
+            Kubernetes clusters that nobody on the team fully understands.
+          </p>
+          <p>
+            We built CloudForge to give startups and small teams the same calibre of
+            infrastructure guidance that enterprise companies get — without the enterprise
+            price tag or the unnecessary complexity.
+          </p>
+        </div>
+        <div class="why-us__visual">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <span class="terminal__title">cloudforge-diag</span>
+            </div>
+            <div class="terminal__body">
+              <code>
+<span class="t-green">$</span> cloudforge-diag investigate --cluster prod-eks<br><br>
+<span class="t-dim">Collecting cluster diagnostics...</span><br>
+<span class="t-dim">Analysing 47 pods across 3 namespaces...</span><br><br>
+<span class="t-yellow">⚠ FINDING:</span> Node group over-provisioned by 62%<br>
+<span class="t-yellow">⚠ FINDING:</span> 3 pods in CrashLoopBackOff (OOM)<br>
+<span class="t-green">✓ FIX:</span> Right-size node group → save $1,240/mo<br>
+<span class="t-green">✓ FIX:</span> Adjust memory limits on api-gateway<br><br>
+<span class="t-cyan">Report saved:</span> prod-eks_audit_2026-03-29.txt
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF ===== -->
+  <section class="social-proof">
+    <div class="container">
+      <p class="section-eyebrow">Results</p>
+      <h2 class="section-title" style="text-align:center;">What our clients walk away with.</h2>
+      <div class="proof__grid">
+        <div class="proof-card">
+          <div class="proof-card__metric">62%</div>
+          <div class="proof-card__label">reduction in monthly AWS spend</div>
+          <p class="proof-card__context">Series A SaaS startup — over-provisioned EKS cluster right-sized in a 2-week audit engagement.</p>
+        </div>
+        <div class="proof-card">
+          <div class="proof-card__metric">&lt;1 hr</div>
+          <div class="proof-card__label">to resolve production outage</div>
+          <p class="proof-card__context">E-commerce platform — intermittent DNS failures traced to an insufficient number of CoreDNS pods to support the high volume of DNS queries. Scaled the deployment and configured NodeLocal DNS Cache to eliminate recurring resolution timeouts.</p>
+        </div>
+        <div class="proof-card">
+          <div class="proof-card__metric">10 days</div>
+          <div class="proof-card__label">from zero to production-ready</div>
+          <p class="proof-card__context">Pre-seed startup — full AWS environment with ECS, CI/CD, monitoring, and IaC delivered in under two weeks.</p>
+        </div>
+      </div>
+      <div class="proof__testimonial">
+        <blockquote>
+          "We were spending $14k/month on AWS and had no idea where it was going. CloudForge
+          found $8k in waste in the first week — mostly idle resources and an over-provisioned
+          node group nobody knew about. The audit paid for itself 5x over."
+        </blockquote>
+        <div class="proof__attribution">
+          <div class="proof__avatar">CTO</div>
+          <div>
+            <span class="proof__name">— CTO, Series A SaaS Company</span>
+            <span class="proof__detail">Architecture Efficiency Audit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="process">
+    <div class="container">
+      <p class="section-eyebrow">How it works</p>
+      <h2 class="section-title">From discovery call to production-ready in weeks, not months.</h2>
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__num">1</div>
+          <h3>Discovery Call</h3>
+          <p>We learn about your stack, your pain points, and your goals. No sales pitch — just a technical conversation.</p>
+        </div>
+        <div class="process__connector" aria-hidden="true"></div>
+        <div class="process__step">
+          <div class="process__num">2</div>
+          <h3>Architecture Review</h3>
+          <p>We map your current environment, identify risks and waste, and propose a clear path forward.</p>
+        </div>
+        <div class="process__connector" aria-hidden="true"></div>
+        <div class="process__step">
+          <div class="process__num">3</div>
+          <h3>Build &amp; Deliver</h3>
+          <p>We deploy, optimise, or fix — then hand you documented, reproducible infrastructure you actually own.</p>
+        </div>
+        <div class="process__connector" aria-hidden="true"></div>
+        <div class="process__step">
+          <div class="process__num">4</div>
+          <h3>Handoff &amp; Support</h3>
+          <p>Full documentation, runbooks, and optional ongoing support. Your team takes the wheel with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF / ANTI-PATTERNS ===== -->
+  <section class="insights">
+    <div class="container">
+      <p class="section-eyebrow">From the field</p>
+      <h2 class="section-title">Common patterns we see (and fix) every week.</h2>
+      <div class="insights__grid">
+        <article class="insight-card">
+          <span class="insight-card__tag">Anti-Pattern</span>
+          <h3>Premature Kubernetes Adoption</h3>
+          <p>Running K8s for 3 microservices? ECS or containerised EC2 might cut your ops burden by 70% with zero downtime risk.</p>
+        </article>
+        <article class="insight-card">
+          <span class="insight-card__tag">Anti-Pattern</span>
+          <h3>Over-Provisioned Compute</h3>
+          <p>We routinely find clusters running at &lt;20% utilisation. Right-sizing alone typically saves 30–50% on compute costs.</p>
+        </article>
+        <article class="insight-card">
+          <span class="insight-card__tag">Anti-Pattern</span>
+          <h3>No Observability Stack</h3>
+          <p>Without Prometheus, Grafana, and proper alerting, you're flying blind. We deploy monitoring as a standard part of every engagement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to simplify your infrastructure?</h2>
+      <p>Book a free 30-minute discovery call. We'll review your current setup and tell you exactly where we can help — no obligation.</p>
+      <a href="contact.html" class="btn btn--primary btn--large">Book Your Free Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> <strong>CloudForge</strong>
+          <p>Cloud infrastructure and DevOps consulting for engineering teams of every size.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Infrastructure Deployment</a></li>
+            <li><a href="#">Troubleshooting &amp; Support</a></li>
+            <li><a href="#">Architecture Audit</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 CloudForge Consulting LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function() {
+      const nav = document.querySelector('.nav__links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav__links--open');
+    });
+  </script>
+</body>

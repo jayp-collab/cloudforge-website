@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudForge — About Us Mockup</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> CloudForge
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#" class="nav__active">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Book a Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">About CloudForge</p>
+      <h1 class="page-hero__title">We've been on the other side<br>of the infrastructure problem.</h1>
+      <p class="page-hero__subtitle">
+        CloudForge was built by two former AWS engineers who spent years working
+        alongside teams of every size — helping them troubleshoot production issues,
+        establish best practices, optimise cloud spend, and build infrastructure
+        they could actually maintain and replicate. We started this practice to
+        bring that same guidance directly to the organisations that need it most.
+      </p>
+    </div>
+  </header>
+
+  <!-- ORIGIN STORY -->
+  <section class="origin">
+    <div class="container">
+      <div class="origin__grid">
+        <div class="origin__text">
+          <h2>The problem we kept seeing</h2>
+          <p>
+            During our time at AWS, we worked with engineering teams of every size
+            — from early-stage startups to Fortune 500 enterprises. The pattern was
+            remarkably consistent: organisations would adopt Kubernetes because it was
+            the industry standard, without fully accounting for the operational burden
+            that comes with it.
+          </p>
+          <p>
+            Engineers who were hired to build product features found themselves deep
+            in cluster troubleshooting instead — debugging pod failures, chasing
+            networking issues, and deciphering YAML configs with little to no
+            Kubernetes experience. Many were learning on the fly, piecing together
+            answers from Stack Overflow at 2am during production incidents. The
+            cognitive load of managing a platform they never signed up to own was
+            burning teams out, slowing delivery, and driving cloud costs through
+            the roof.
+          </p>
+          <p>
+            We built CloudForge to give these teams something they couldn't easily find:
+            honest, experienced infrastructure guidance from people who've seen what works
+            and what doesn't — at every scale.
+          </p>
+        </div>
+        <div class="origin__values">
+          <div class="value-card">
+            <h3><span class="value-check">✓</span> Simplicity over sophistication</h3>
+            <p>The right architecture is the simplest one that meets your actual requirements — not the one that looks best on a conference slide.</p>
+          </div>
+          <div class="value-card">
+            <h3><span class="value-check">✓</span> You own everything</h3>
+            <p>Every engagement ends with infrastructure you control. Terraform repos, documentation, runbooks — no vendor lock-in to us.</p>
+          </div>
+          <div class="value-card">
+            <h3><span class="value-check">✓</span> Straight talk</h3>
+            <p>If you don't need Kubernetes, we'll tell you. If ECS does the job, we'll recommend it. Our advice is based on your needs, not our preferences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDERS -->
+  <section class="founders">
+    <div class="container">
+      <p class="section-eyebrow">The team</p>
+      <h2 class="section-title" style="text-align:center;">Founded by engineers, for engineers.</h2>
+      <div class="founders__grid">
+
+        <div class="founder-card">
+          <div class="founder-card__avatar">
+            <div class="avatar-placeholder">JP</div>
+          </div>
+          <h3>Jason Phillip</h3>
+          <p class="founder-card__role">Co-Founder</p>
+          <p class="founder-card__bio">
+            Former cloud engineer at Amazon Web Services specialising in Kubernetes,
+            DevOps strategies, and containerised environments. Jason brings deep
+            expertise in platform engineering and cluster architecture.
+          </p>
+          <div class="founder-card__links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+
+        <div class="founder-card">
+          <div class="founder-card__avatar">
+            <div class="avatar-placeholder">DN</div>
+          </div>
+          <h3>Domonic Neal</h3>
+          <p class="founder-card__role">Co-Founder</p>
+          <p class="founder-card__bio">
+            Former cloud engineer at Amazon Web Services with a strong background
+            in cloud technologies, programming languages, and infrastructure automation.
+            Domonic focuses on IaC, CI/CD, and operational excellence.
+          </p>
+          <div class="founder-card__links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech-stack">
+    <div class="container">
+      <p class="section-eyebrow">Our toolkit</p>
+      <h2 class="section-title" style="text-align:center;">Technologies we work with every day.</h2>
+      <p class="tech-stack__subtitle">Every engagement requires the right tools for the job. Here are just a few we've used across successful client engagements.</p>
+
+      <div class="toolkit-stream">
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">☁️ Cloud</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">AWS</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">⚙️ Orchestration</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">Kubernetes</span>
+            <span class="tool-chip">Helm</span>
+            <span class="tool-chip">Docker</span>
+            <span class="tool-chip">AWS ECS</span>
+            <span class="tool-chip">AWS EKS</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">🏗️ IaC</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">Terraform</span>
+            <span class="tool-chip">CloudFormation</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">🔄 CI/CD</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">GitHub Actions</span>
+            <span class="tool-chip">GitLab CI</span>
+            <span class="tool-chip">ArgoCD</span>
+            <span class="tool-chip">AWS CodePipeline</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">📊 Observability</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">Prometheus</span>
+            <span class="tool-chip">Grafana</span>
+            <span class="tool-chip">AWS CloudWatch</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">🔒 Security</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">GuardDuty</span>
+            <span class="tool-chip">Security Hub</span>
+            <span class="tool-chip">AWS Config</span>
+            <span class="tool-chip">AWS WAF</span>
+            <span class="tool-chip">IAM Identity Center</span>
+            <span class="tool-chip">Trivy</span>
+            <span class="tool-chip">SonarQube</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">💻 Languages</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">Go</span>
+            <span class="tool-chip">Python</span>
+            <span class="tool-chip">Bash</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">📂 Source Control</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">GitHub</span>
+            <span class="tool-chip">GitLab</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Let's talk about your infrastructure.</h2>
+      <p>We're engineers first. Book a call and we'll have a real technical conversation about what you're building and how we can help.</p>
+      <a href="contact.html" class="btn btn--primary btn--large">Book Your Free Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> <strong>CloudForge</strong>
+          <p>Cloud infrastructure and DevOps consulting for engineering teams of every size.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Infrastructure Deployment</a></li>
+            <li><a href="#">Troubleshooting &amp; Support</a></li>
+            <li><a href="#">Architecture Audit</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 CloudForge Consulting LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function() {
+      const nav = document.querySelector('.nav__links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav__links--open');
+    });
+  </script>
+</body>

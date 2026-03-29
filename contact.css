@@ -1,0 +1,155 @@
+/* ================================================================
+   Contact Page Styles
+   ================================================================ */
+
+.contact {
+  padding: 40px 24px 80px;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Form */
+.contact__form-wrap h2 {
+  font-size: 1.4rem;
+  margin-bottom: 28px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-light);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--navy-light);
+  color: var(--white);
+  font-size: 0.92rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--cyan);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--gray);
+}
+
+.form-group select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238a9bae' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.form-group select option {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Info sidebar */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__info-card {
+  background: var(--navy-light);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.contact__info-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.contact__info-card p {
+  font-size: 0.88rem;
+  color: var(--gray-light);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.contact__detail {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  color: var(--cyan) !important;
+  font-size: 0.9rem !important;
+}
+
+.contact__social {
+  display: flex;
+  gap: 16px;
+}
+
+.contact__social a {
+  font-size: 0.88rem;
+  color: var(--gray-light);
+  transition: color 0.2s;
+}
+
+.contact__social a:hover {
+  color: var(--cyan);
+}
+
+@media (max-width: 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Send message button */
+.contact-form .btn {
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}

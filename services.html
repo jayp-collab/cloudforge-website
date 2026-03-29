@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudForge — Services Mockup</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+  <!-- NAV (same as homepage) -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> CloudForge
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="nav__active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Book a Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Our Services</p>
+      <h1 class="page-hero__title">Infrastructure that works for you,<br>not the other way around.</h1>
+      <p class="page-hero__subtitle">
+        Three focused services designed to meet you where you are — whether you need
+        a production-ready environment built from scratch, a critical issue resolved fast,
+        or a clear picture of where your cloud spend is going.
+      </p>
+    </div>
+  </header>
+
+  <!-- SERVICE DETAIL: DEPLOYMENT -->
+  <section class="svc-detail" id="deployment">
+    <div class="container">
+      <div class="svc-detail__grid">
+        <div class="svc-detail__content">
+          <span class="svc-detail__num">01</span>
+          <h2>Done-For-You AWS Infrastructure Deployment</h2>
+          <p class="svc-detail__lead">
+            Production-ready cloud environments for teams that need to move fast
+            without hiring a full-time DevOps engineer.
+          </p>
+          <p>
+            We start with an architecture design session to understand your application,
+            traffic patterns, security requirements, and deployment workflows. Then we
+            build it — fully codified in Terraform, documented, and handed off with
+            monitoring already in place.
+          </p>
+
+          <div class="svc-detail__deliverables">
+            <h3>What you get</h3>
+            <ul class="deliverable-list">
+              <li>AWS Account Structure &amp; Network Design</li>
+              <li>EKS, ECS, or EC2 Compute Platform</li>
+              <li>CI/CD Pipeline Integration</li>
+              <li>Monitoring &amp; Alerting Stack</li>
+              <li>Terraform IaC Repository</li>
+              <li>Documentation &amp; Runbook</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Deployment Pricing Tiers -->
+      <h3 class="pricing__category">Choose your tier</h3>
+      <div class="pricing__grid">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Forge Starter</h4>
+            <div class="pricing-card__price">$3,500</div>
+          </div>
+          <p class="pricing-card__fit">Early-stage startups, MVPs, and internal tools</p>
+          <ul class="pricing-card__features">
+            <li>Single environment</li>
+            <li>ECS Fargate + ALB</li>
+            <li>One data store (RDS or ElastiCache)</li>
+            <li>VPC with public/private subnets</li>
+            <li>Full security baseline included</li>
+            <li>CI/CD pipeline</li>
+            <li>Documentation + runbook</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-card--popular">
+          <div class="pricing-card__header">
+            <h4>Forge Standard</h4>
+            <div class="pricing-card__price">$6,500</div>
+          </div>
+          <p class="pricing-card__fit">Growing SaaS companies preparing for production or compliance</p>
+          <ul class="pricing-card__features">
+            <li>Staging + production environments</li>
+            <li>ECS Fargate + ALB</li>
+            <li>RDS Multi-AZ + ElastiCache</li>
+            <li>Prometheus, Grafana, AlertManager</li>
+            <li>CIS Benchmark + Security Hub</li>
+            <li>Human access IAM roles</li>
+            <li>All four CI/CD pipeline templates</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Forge Enterprise</h4>
+            <div class="pricing-card__price">$10,000 – $15,000</div>
+          </div>
+          <p class="pricing-card__fit">Regulated workloads, compliance-driven, Kubernetes platform</p>
+          <ul class="pricing-card__features">
+            <li>EKS with managed node groups + full add-ons</li>
+            <li>IRSA for all workloads</li>
+            <li>Aurora Multi-AZ + ElastiCache replication</li>
+            <li>KMS customer-managed keys</li>
+            <li>PCI DSS / HIPAA / NIST standards</li>
+            <li>2hr architecture review session</li>
+            <li>30-day post-deployment support</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing__baseline-note">
+        Every deployment tier includes a full security baseline as standard — WAF, Secrets Manager, AWS Backup, VPC endpoints, Container Insights, CI/CD, and least-privilege IAM. Security is never an upsell.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAIL: TROUBLESHOOTING -->
+  <section class="svc-detail svc-detail--alt" id="troubleshooting">
+    <div class="container">
+      <div class="svc-detail__grid">
+        <div class="svc-detail__content">
+          <span class="svc-detail__num">02</span>
+          <h2>Troubleshooting &amp; Operational Support</h2>
+          <p class="svc-detail__lead">
+            Your cluster is on fire. We put it out, find the root cause, and make sure
+            it doesn't happen again.
+          </p>
+          <p>
+            We follow a structured three-phase diagnostic workflow: gather telemetry,
+            analyse metrics and event timelines, then deliver a root cause analysis
+            with clear remediation steps.
+          </p>
+
+          <div class="svc-detail__scenarios">
+            <h3>Common scenarios we handle</h3>
+            <div class="scenario-tags">
+              <span class="tag">CrashLoopBackOff</span>
+              <span class="tag">Image Pull Failures</span>
+              <span class="tag">DNS Resolution</span>
+              <span class="tag">Load Balancer Misconfig</span>
+              <span class="tag">Autoscaling Failures</span>
+              <span class="tag">CI/CD Pipeline Issues</span>
+              <span class="tag">Resource Exhaustion</span>
+              <span class="tag">Cluster Performance</span>
+              <span class="tag">Networking Failures</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Troubleshooting Pricing Tiers -->
+      <h3 class="pricing__category">Choose your engagement</h3>
+      <div class="pricing__grid">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Hourly Consulting</h4>
+            <div class="pricing-card__price">$200/hr</div>
+          </div>
+          <p class="pricing-card__fit">Ad-hoc troubleshooting, architecture questions, config review</p>
+          <ul class="pricing-card__features">
+            <li>Pay as you go</li>
+            <li>No minimum commitment</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Troubleshooting Sprint</h4>
+            <div class="pricing-card__price">$1,500 – $3,000</div>
+          </div>
+          <p class="pricing-card__fit">Structured 2–3 day diagnostic engagement</p>
+          <ul class="pricing-card__features">
+            <li>Root cause analysis</li>
+            <li>Written remediation report</li>
+            <li>Fixed scope and timeline</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-card--popular">
+          <div class="pricing-card__header">
+            <h4>Monthly Retainer</h4>
+            <div class="pricing-card__price">$3,000/mo</div>
+          </div>
+          <p class="pricing-card__fit">Ongoing support with priority response</p>
+          <ul class="pricing-card__features">
+            <li>15 hours on-call support</li>
+            <li>1 infrastructure review per month</li>
+            <li>Priority response</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAIL: AUDIT -->
+  <section class="svc-detail" id="audit">
+    <div class="container">
+      <div class="svc-detail__grid">
+        <div class="svc-detail__content">
+          <span class="svc-detail__num">03</span>
+          <h2>Cloud Architecture Efficiency Audit</h2>
+          <p class="svc-detail__lead">
+            Find out exactly where your AWS spend is going — and where it shouldn't be.
+            Backed by our money-back guarantee.
+          </p>
+          <p>
+            We take read-only access to your AWS account and compute environment,
+            then run a four-phase analysis covering infrastructure utilisation,
+            architecture complexity, and operational risk.
+          </p>
+
+          <div class="svc-detail__phases">
+            <h3>Audit phases</h3>
+            <div class="phase-timeline">
+              <div class="phase">
+                <div class="phase__marker">1</div>
+                <div>
+                  <h4>Infrastructure Discovery</h4>
+                  <p>AWS account architecture, VPC topology, cluster config, resource allocation</p>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="phase__marker">2</div>
+                <div>
+                  <h4>Infrastructure Mapping</h4>
+                  <p>Visual map of services, pods, and underlying infrastructure relationships</p>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="phase__marker">3</div>
+                <div>
+                  <h4>Cost Analysis</h4>
+                  <p>Service-level billing analysis, resource utilisation metrics, waste identification</p>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="phase__marker">4</div>
+                <div>
+                  <h4>Optimisation Strategy</h4>
+                  <p>Right-sizing, consolidation, simplification — a clear roadmap with projected savings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guarantee-inline">
+            🛡️ <strong>Guarantee:</strong> If we can't find cost savings, you get a full refund (minus $100 processing fee).
+          </div>
+        </div>
+      </div>
+
+      <!-- Audit Pricing Tiers -->
+      <h3 class="pricing__category">Choose your audit</h3>
+      <div class="pricing__grid pricing__grid--two">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Forge Audit Lite</h4>
+            <div class="pricing-card__price">$1,500</div>
+          </div>
+          <p class="pricing-card__fit">Focused cost and security review for smaller environments</p>
+          <ul class="pricing-card__features">
+            <li>Single AWS account</li>
+            <li>Top 5 cost optimisation recommendations</li>
+            <li>Security posture review</li>
+            <li>Written report (2–3 pages)</li>
+            <li>Money-back guarantee</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-card--popular">
+          <div class="pricing-card__header">
+            <h4>Forge Audit Full</h4>
+            <div class="pricing-card__price">$3,500 – $7,000</div>
+          </div>
+          <p class="pricing-card__fit">Production environments, compliance prep, complex multi-service setups</p>
+          <ul class="pricing-card__features">
+            <li>Full 4-phase audit framework</li>
+            <li>Multi-account or complex single-account</li>
+            <li>Utilisation, complexity, and risk analysis</li>
+            <li>Prioritised recommendations with effort/impact</li>
+            <li>Executive summary + detailed report</li>
+            <li>1hr debrief call</li>
+            <li>Money-back guarantee</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="comparison">
+    <div class="container">
+      <p class="section-eyebrow">At a glance</p>
+      <h2 class="section-title" style="text-align:center;">Choose the right engagement for your needs.</h2>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Deployment</th>
+              <th>Troubleshooting</th>
+              <th>Audit</th>
+              <th>Retainer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Best for</td>
+              <td>New environments</td>
+              <td>Production issues</td>
+              <td>Cost &amp; complexity</td>
+              <td>Ongoing support</td>
+            </tr>
+            <tr>
+              <td>Timeline</td>
+              <td>2–4 weeks</td>
+              <td>1–5 days</td>
+              <td>1–2 weeks</td>
+              <td>Monthly</td>
+            </tr>
+            <tr>
+              <td>Deliverable</td>
+              <td>Working infra + IaC</td>
+              <td>RCA report + remediation</td>
+              <td>Optimisation roadmap</td>
+              <td>Priority support + monthly review</td>
+            </tr>
+            <tr>
+              <td>Starting price</td>
+              <td>$3,500</td>
+              <td>$200/hr</td>
+              <td>$1,500</td>
+              <td>$3,000/mo</td>
+            </tr>
+            <tr>
+              <td>Guarantee</td>
+              <td>—</td>
+              <td>—</td>
+              <td>✓ Money-back</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <p class="section-eyebrow">Common questions</p>
+      <h2 class="section-title" style="text-align:center;">Before you book a call.</h2>
+      <div class="faq__list">
+
+        <details class="faq__item">
+          <summary>Do you need access to our AWS account?</summary>
+          <p>For audits, we request read-only IAM access so we can analyse your infrastructure and cost data. For deployments, we'll need write access to the target account. We can work within your existing security policies and are happy to use temporary credentials or assume-role setups.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>What if we don't use Kubernetes?</summary>
+          <p>That's completely fine — and honestly, many of our clients shouldn't be using Kubernetes. We work with ECS, EC2-based deployments, serverless, and hybrid setups. If a simpler platform fits your needs better, we'll recommend it.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>How quickly can you start?</summary>
+          <p>Troubleshooting engagements can typically start within 24–48 hours. Deployments and audits usually kick off within a week of the discovery call, depending on scheduling and access provisioning.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>What does the money-back guarantee cover?</summary>
+          <p>If our Architecture Efficiency Audit doesn't identify any actionable cost savings or architecture improvements, we refund the full engagement fee minus a $100 processing fee.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Do you offer ongoing support after an engagement?</summary>
+          <p>Yes. After any engagement, we offer optional retainer-based support for questions, incident response, and infrastructure changes. Many clients start with a deployment or audit and then move to a lightweight monthly retainer.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Will we be locked in to CloudForge after delivery?</summary>
+          <p>No. Everything we build is yours — Terraform repos, documentation, runbooks, monitoring dashboards. You can maintain it yourself, hand it to another team, or bring us back. Zero vendor lock-in.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Not sure which service you need?</h2>
+      <p>Book a free discovery call and we'll figure it out together. No pressure, no sales pitch — just a technical conversation about your infrastructure.</p>
+      <a href="contact.html" class="btn btn--primary btn--large">Book Your Free Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> <strong>CloudForge</strong>
+          <p>Cloud infrastructure and DevOps consulting for engineering teams of every size.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Infrastructure Deployment</a></li>
+            <li><a href="#">Troubleshooting &amp; Support</a></li>
+            <li><a href="#">Architecture Audit</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 CloudForge Consulting LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function() {
+      const nav = document.querySelector('.nav__links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav__links--open');
+    });
+  </script>
+</body>
