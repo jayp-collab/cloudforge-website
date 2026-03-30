@@ -219,14 +219,23 @@ img { max-width: 100%; display: block; }
 
 /* Decorative grid */
 .hero__grid {
+  display: none;
+}
+
+.hero__bg {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(61,168,213,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(61,168,213,0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 60% 60% at 50% 40%, black 20%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 60% 60% at 50% 40%, black 20%, transparent 70%);
+  z-index: 0;
+  background: url('assets/hero-bg.png') center center / cover no-repeat;
+  opacity: 0.15;
+  filter: blur(1px);
+}
+
+.hero__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--navy) 0%, transparent 30%, transparent 70%, var(--navy) 100%);
 }
 
 /* ================================================================
