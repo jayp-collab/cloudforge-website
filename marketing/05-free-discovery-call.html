@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: #0c1117; margin: 0; padding: 0; }
+  body { width: 1080px; height: 1080px; overflow: hidden; margin: 0 auto; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(145deg, #0c1117 0%, #141c25 50%, #0f1820 100%);
+    color: #fff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .bar { position: absolute; left: 0; right: 0; height: 5px; }
+  .bar--top { top: 0; background: linear-gradient(90deg, #3da8d5, #f5a623); }
+  .bar--bottom { bottom: 0; background: linear-gradient(90deg, #f5a623, #3da8d5); }
+  .corner { position: absolute; width: 45px; height: 45px; }
+  .c-tl { top: 25px; left: 25px; border-top: 2px solid rgba(61,168,213,0.3); border-left: 2px solid rgba(61,168,213,0.3); }
+  .c-tr { top: 25px; right: 25px; border-top: 2px solid rgba(61,168,213,0.3); border-right: 2px solid rgba(61,168,213,0.3); }
+  .c-bl { bottom: 25px; left: 25px; border-bottom: 2px solid rgba(61,168,213,0.3); border-left: 2px solid rgba(61,168,213,0.3); }
+  .c-br { bottom: 25px; right: 25px; border-bottom: 2px solid rgba(61,168,213,0.3); border-right: 2px solid rgba(61,168,213,0.3); }
+  .glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-55%); width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(61,168,213,0.1) 0%, transparent 70%); }
+  .c { position: relative; z-index: 1; text-align: center; padding: 0 80px; }
+  .logo { font-size: 24px; font-weight: 700; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 2px; }
+  .logo img { height: 60px; }
+  .logo-sub { font-size: 12px; color: #8a9bae; letter-spacing: 4px; margin-bottom: 30px; }
+  .div { width: 50px; height: 2px; background: rgba(61,168,213,0.3); margin: 0 auto 30px; }
+  h1 { font-size: 56px; font-weight: 800; line-height: 1.15; }
+  .checks { display: flex; flex-direction: column; gap: 10px; margin-bottom: 35px; }
+  .checks div { font-size: 19px; color: #c0cdd8; }
+  .checks span { color: #3da8d5; font-weight: 700; }
+  .btn { display: inline-block; padding: 18px 45px; background: linear-gradient(135deg,#3da8d5,#2b8db8); color: #fff; font-size: 20px; font-weight: 700; border-radius: 12px; text-decoration: none; box-shadow: 0 8px 25px rgba(61,168,213,0.25); }
+</style>
+</head>
+<body>
+  <div class="bar bar--top"></div>
+    <div class="glow"></div>
+  <div class="corner c-tl"></div>
+  <div class="corner c-tr"></div>
+  <div class="corner c-bl"></div>
+  <div class="corner c-br"></div>
+  <div class="c">
+    <div class="logo"><img src="../assets/cloudforgelogo.PNG"> CLOUDFORGE</div>
+    <div class="logo-sub">CONSULTING</div>
+    <div class="div"></div>
+    <h1>Let's Talk About</h1>
+    <h1 style="color: #3da8d5; margin-bottom: 25px;">Your Infrastructure.</h1>
+    <p style="font-size: 21px; color: #8a9bae; line-height: 1.6; margin-bottom: 35px;">30 minutes. No sales pitch. Just a real<br>technical conversation about your stack.</p>
+    <div style="font-size: 13px; color: #f5a623; letter-spacing: 2px; margin-bottom: 18px;">WHAT WE'LL COVER</div>
+    <div class="checks">
+      <div><span>✓</span>&nbsp;&nbsp;Your current architecture &amp; pain points</div>
+      <div><span>✓</span>&nbsp;&nbsp;Quick wins we can spot right away</div>
+      <div><span>✓</span>&nbsp;&nbsp;Whether we're the right fit to help</div>
+    </div>
+    <a class="btn" style="margin-bottom: 25px;">Book a Free Discovery Call →</a>
+    <div style="font-size: 15px; color: #5a6a7a;">cloudforge-consulting.io</div>
+  </div>
+</body>
+</html>
