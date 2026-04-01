@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudForge — Resources &amp; Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> CloudForge
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Book a Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Resources</p>
+      <h1 class="page-hero__title">Infrastructure insights from<br>the engineers in the trenches.</h1>
+      <p class="page-hero__subtitle">
+        Practical guides, anti-pattern breakdowns, and cost-saving strategies
+        from real client engagements. No fluff.
+      </p>
+    </div>
+  </header>
+
+  <!-- FEATURED POST -->
+  <section class="featured-post">
+    <div class="container">
+      <div class="featured-post__card">
+        <div class="featured-post__content">
+          <span class="featured-post__badge">Featured</span>
+          <h2>Is Your Startup Over-Engineered? A 12-Point Self-Assessment</h2>
+          <p>
+            Most startups we audit are running infrastructure designed for 100x their
+            current scale. Here's how to tell if your architecture is costing you more
+            than it should — and what to do about it.
+          </p>
+          <div class="featured-post__meta">
+            <span>📅 March 2026</span>
+            <span>⏱ 8 min read</span>
+            <span>🏷️ Cost Optimisation</span>
+          </div>
+          <a href="#" class="btn btn--primary" style="margin-top:20px;">Read Article →</a>
+        </div>
+        <div class="featured-post__visual">
+          <div class="terminal terminal--small">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <div class="terminal__body">
+              <code>
+<span class="t-yellow">⚠</span> K8s for 3 services? Consider ECS.<br>
+<span class="t-yellow">⚠</span> Cluster at 18% utilisation.<br>
+<span class="t-yellow">⚠</span> NAT Gateway in 3 AZs ($100+/mo).<br>
+<span class="t-green">✓</span> Potential savings: $4,200/mo
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE GRID -->
+  <section class="articles">
+    <div class="container">
+      <div class="articles__filter">
+        <button class="filter-btn filter-btn--active">All</button>
+        <button class="filter-btn">Anti-Patterns</button>
+        <button class="filter-btn">Cost Optimisation</button>
+        <button class="filter-btn">Kubernetes</button>
+        <button class="filter-btn">Terraform</button>
+        <button class="filter-btn">CI/CD</button>
+      </div>
+
+      <div class="articles__grid">
+
+        <article class="article-card">
+          <span class="article-card__tag article-card__tag--antipattern">Anti-Pattern</span>
+          <h3>Premature Kubernetes Adoption: When ECS Is the Better Choice</h3>
+          <p>Running K8s for a handful of services introduces operational overhead that most small teams can't sustain. Here's how to evaluate whether you actually need it.</p>
+          <div class="article-card__meta">
+            <span>March 2026</span>
+            <span>6 min read</span>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <span class="article-card__tag article-card__tag--cost">Cost Optimisation</span>
+          <h3>The $8,000/Month NAT Gateway Nobody Noticed</h3>
+          <p>NAT Gateways are one of the most overlooked line items on an AWS bill. We break down the real cost and show cheaper alternatives.</p>
+          <div class="article-card__meta">
+            <span>March 2026</span>
+            <span>5 min read</span>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <span class="article-card__tag article-card__tag--k8s">Kubernetes</span>
+          <h3>Debugging CrashLoopBackOff: A Systematic Approach</h3>
+          <p>The most common Kubernetes error, and the diagnostic workflow we use to resolve it in under an hour across client environments.</p>
+          <div class="article-card__meta">
+            <span>February 2026</span>
+            <span>7 min read</span>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <span class="article-card__tag article-card__tag--terraform">Terraform</span>
+          <h3>Structuring Terraform for Multi-Environment AWS Deployments</h3>
+          <p>How we organise Terraform stacks, modules, and state for clients who need dev, staging, and production without the copy-paste.</p>
+          <div class="article-card__meta">
+            <span>February 2026</span>
+            <span>10 min read</span>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <span class="article-card__tag article-card__tag--antipattern">Anti-Pattern</span>
+          <h3>Over-Provisioned Node Groups: The Silent Budget Killer</h3>
+          <p>We routinely find EKS clusters running at less than 20% utilisation. Right-sizing alone typically saves 30–50% on compute.</p>
+          <div class="article-card__meta">
+            <span>January 2026</span>
+            <span>5 min read</span>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <span class="article-card__tag article-card__tag--cost">Cost Optimisation</span>
+          <h3>AWS Cost Explorer Is Not Enough: Building a Real Cost Strategy</h3>
+          <p>Cost Explorer shows you what you spent. It doesn't tell you why or what to do about it. Here's the framework we use in every audit.</p>
+          <div class="article-card__meta">
+            <span>January 2026</span>
+            <span>8 min read</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> <strong>CloudForge</strong>
+          <p>Cloud infrastructure and DevOps consulting for engineering teams of every size.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Infrastructure Deployment</a></li>
+            <li><a href="services.html">Troubleshooting &amp; Support</a></li>
+            <li><a href="services.html">Architecture Audit</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 CloudForge Consulting LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function() {
+      const nav = document.querySelector('.nav__links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav__links--open');
+    });
+  </script>
+
+  <script>
+    // Theme toggle
+    (function() {
+      var saved = localStorage.getItem('cf-theme');
+      if (saved === 'light') document.body.classList.add('light');
+      
+      var btn = document.querySelector('.theme-toggle');
+      btn.textContent = document.body.classList.contains('light') ? '🌙' : '☀️';
+      
+      btn.addEventListener('click', function() {
+        document.body.classList.toggle('light');
+        var isLight = document.body.classList.contains('light');
+        localStorage.setItem('cf-theme', isLight ? 'light' : 'dark');
+        btn.textContent = isLight ? '🌙' : '☀️';
+      });
+    })();
+  </script>
+</body>
+</html>

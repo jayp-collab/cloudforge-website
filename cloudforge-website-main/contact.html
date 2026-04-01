@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudForge — Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> CloudForge
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__active">Contact Us</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Book a Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h1 class="page-hero__title">Let's talk about what you're building.</h1>
+      <p class="page-hero__subtitle">
+        Whether you have a specific challenge in mind or just want to explore how we can help,
+        we'd love to hear from you.
+      </p>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrap">
+          <h2>Send us a message</h2>
+          <form class="contact-form" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" placeholder="Company name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="service">What are you looking for?</label>
+              <select id="service">
+                <option value="">Select a service</option>
+                <option value="deployment">Infrastructure Deployment</option>
+                <option value="troubleshooting">Troubleshooting &amp; Support</option>
+                <option value="audit">Architecture Efficiency Audit</option>
+                <option value="retainer">Monthly Retainer</option>
+                <option value="other">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your situation</label>
+              <textarea id="message" rows="5" placeholder="What challenges are you facing? What does your current environment look like?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--large">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact__info">
+          <div class="contact__info-card">
+            <h3>Book a call directly</h3>
+            <p>Skip the form — schedule a free 30-minute discovery call and we'll have a real technical conversation.</p>
+            <a href="#" class="btn btn--ghost">Schedule a Call →</a>
+          </div>
+
+          <div class="contact__info-card">
+            <h3>Email us</h3>
+            <p class="contact__detail">support@cloudforge-consulting.io</p>
+          </div>
+
+          <div class="contact__info-card">
+            <h3>Response time</h3>
+            <p>We typically respond within 24 hours on business days. For urgent production issues, book a call or mention it in your message.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo-img-wrap"><img src="assets/cloudforgelogo.PNG" alt="CloudForge logo" class="nav__logo-img"></div> <strong>CloudForge</strong>
+          <p>Cloud infrastructure and DevOps consulting for engineering teams of every size.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Infrastructure Deployment</a></li>
+            <li><a href="services.html">Troubleshooting &amp; Support</a></li>
+            <li><a href="services.html">Architecture Audit</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 CloudForge Consulting LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function() {
+      const nav = document.querySelector('.nav__links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav__links--open');
+    });
+  </script>
+
+  <script>
+    // Theme toggle
+    (function() {
+      var saved = localStorage.getItem('cf-theme');
+      if (saved === 'light') document.body.classList.add('light');
+      
+      var btn = document.querySelector('.theme-toggle');
+      btn.textContent = document.body.classList.contains('light') ? '🌙' : '☀️';
+      
+      btn.addEventListener('click', function() {
+        document.body.classList.toggle('light');
+        var isLight = document.body.classList.contains('light');
+        localStorage.setItem('cf-theme', isLight ? 'light' : 'dark');
+        btn.textContent = isLight ? '🌙' : '☀️';
+      });
+    })();
+  </script>
+</body>
+</html>
