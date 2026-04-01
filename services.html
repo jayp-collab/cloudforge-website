@@ -41,180 +41,12 @@
     </div>
   </header>
 
-  <!-- SERVICE DETAIL: DEPLOYMENT -->
-  <section class="svc-detail" id="deployment">
-    <div class="container">
-      <div class="svc-detail__grid">
-        <div class="svc-detail__content">
-          <span class="svc-detail__num">01</span>
-          <h2>Done-For-You AWS Infrastructure Deployment</h2>
-          <p class="svc-detail__lead">
-            Production-ready cloud environments for teams that need to move fast
-            without hiring a full-time DevOps engineer.
-          </p>
-          <p>
-            We start with an architecture design session to understand your application,
-            traffic patterns, security requirements, and deployment workflows. Then we
-            build it — fully codified in Terraform, documented, and handed off with
-            monitoring already in place.
-          </p>
-
-          <div class="svc-detail__deliverables">
-            <h3>What you get</h3>
-            <ul class="deliverable-list">
-              <li>AWS Account Structure &amp; Network Design</li>
-              <li>EKS, ECS, or EC2 Compute Platform</li>
-              <li>CI/CD Pipeline Integration</li>
-              <li>Monitoring &amp; Alerting Stack</li>
-              <li>Terraform IaC Repository</li>
-              <li>Documentation &amp; Runbook</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Deployment Pricing Tiers -->
-      <h3 class="pricing__category">Choose your tier</h3>
-      <div class="pricing__grid">
-        <div class="pricing-card">
-          <div class="pricing-card__header">
-            <h4>Forge Starter</h4>
-            <div class="pricing-card__price">$3,500</div>
-          </div>
-          <p class="pricing-card__fit">Early-stage startups, MVPs, and internal tools</p>
-          <ul class="pricing-card__features">
-            <li>Single environment</li>
-            <li>ECS Fargate + ALB</li>
-            <li>One data store (RDS or ElastiCache)</li>
-            <li>VPC with public/private subnets</li>
-            <li>Full security baseline included</li>
-            <li>CI/CD pipeline</li>
-            <li>Documentation + runbook</li>
-          </ul>
-        </div>
-        <div class="pricing-card pricing-card--popular">
-          <div class="pricing-card__header">
-            <h4>Forge Standard</h4>
-            <div class="pricing-card__price">$6,500</div>
-          </div>
-          <p class="pricing-card__fit">Growing SaaS companies preparing for production or compliance</p>
-          <ul class="pricing-card__features">
-            <li>Staging + production environments</li>
-            <li>ECS Fargate + ALB</li>
-            <li>RDS Multi-AZ + ElastiCache</li>
-            <li>Prometheus, Grafana, AlertManager</li>
-            <li>CIS Benchmark + Security Hub</li>
-            <li>Human access IAM roles</li>
-            <li>All four CI/CD pipeline templates</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <div class="pricing-card__header">
-            <h4>Forge Enterprise</h4>
-            <div class="pricing-card__price">$10,000 – $15,000</div>
-          </div>
-          <p class="pricing-card__fit">Regulated workloads, compliance-driven, Kubernetes platform</p>
-          <ul class="pricing-card__features">
-            <li>EKS with managed node groups + full add-ons</li>
-            <li>IRSA for all workloads</li>
-            <li>Aurora Multi-AZ + ElastiCache replication</li>
-            <li>KMS customer-managed keys</li>
-            <li>PCI DSS / HIPAA / NIST standards</li>
-            <li>2hr architecture review session</li>
-            <li>30-day post-deployment support</li>
-          </ul>
-        </div>
-      </div>
-      <p class="pricing__baseline-note">
-        Every deployment tier includes a full security baseline as standard — WAF, Secrets Manager, AWS Backup, VPC endpoints, Container Insights, CI/CD, and least-privilege IAM. Security is never an upsell.
-      </p>
-    </div>
-  </section>
-
-  <!-- SERVICE DETAIL: TROUBLESHOOTING -->
-  <section class="svc-detail svc-detail--alt" id="troubleshooting">
-    <div class="container">
-      <div class="svc-detail__grid">
-        <div class="svc-detail__content">
-          <span class="svc-detail__num">02</span>
-          <h2>Troubleshooting &amp; Operational Support</h2>
-          <p class="svc-detail__lead">
-            Your cluster is on fire. We put it out, find the root cause, and make sure
-            it doesn't happen again.
-          </p>
-          <p>
-            We follow a structured three-phase diagnostic workflow: gather telemetry,
-            analyze metrics and event timelines, then deliver a root cause analysis
-            with clear remediation steps.
-          </p>
-
-          <div class="svc-detail__scenarios">
-            <h3>Common scenarios we handle</h3>
-            <div class="scenario-tags">
-              <span class="tag">CrashLoopBackOff</span>
-              <span class="tag">Image Pull Failures</span>
-              <span class="tag">DNS Resolution</span>
-              <span class="tag">Load Balancer Misconfig</span>
-              <span class="tag">Autoscaling Failures</span>
-              <span class="tag">CI/CD Pipeline Issues</span>
-              <span class="tag">Resource Exhaustion</span>
-              <span class="tag">Cluster Performance</span>
-              <span class="tag">Networking Failures</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Troubleshooting Pricing Tiers -->
-      <h3 class="pricing__category">Choose your engagement</h3>
-      <div class="pricing__grid">
-        <div class="pricing-card">
-          <div class="pricing-card__header">
-            <h4>Hourly Consulting</h4>
-            <div class="pricing-card__price">$200/hr</div>
-          </div>
-          <p class="pricing-card__fit">Ad-hoc troubleshooting, architecture questions, config review</p>
-          <ul class="pricing-card__features">
-            <li>Pay as you go</li>
-            <li>No minimum commitment</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <div class="pricing-card__header">
-            <h4>Troubleshooting Sprint</h4>
-            <div class="pricing-card__price">$1,500 – $3,000</div>
-          </div>
-          <p class="pricing-card__fit">Structured 2–3 day diagnostic engagement</p>
-          <ul class="pricing-card__features">
-            <li>Root cause analysis</li>
-            <li>Written remediation report</li>
-            <li>Fixed scope and timeline</li>
-          </ul>
-        </div>
-        <div class="pricing-card pricing-card--popular">
-          <div class="pricing-card__header">
-            <h4>Monthly Retainer</h4>
-            <div class="pricing-card__price">$3,000/mo</div>
-          </div>
-          <p class="pricing-card__fit">Ongoing support with priority response</p>
-          <ul class="pricing-card__features">
-            <li>15 hours on-call support</li>
-            <li>1 infrastructure review per month</li>
-            <li>Priority response</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- SERVICE DETAIL: AUDIT -->
   <section class="svc-detail" id="audit">
     <div class="container">
       <div class="svc-detail__grid">
         <div class="svc-detail__content">
-          <span class="svc-detail__num">03</span>
+          <span class="svc-detail__num">01</span>
           <h2>Cloud Architecture Efficiency Audit</h2>
           <p class="svc-detail__lead">
             Find out exactly where your AWS spend is going — and where it shouldn't be.
@@ -303,6 +135,174 @@
     </div>
   </section>
 
+  <!-- SERVICE DETAIL: DEPLOYMENT -->
+  <section class="svc-detail svc-detail--alt" id="deployment">
+    <div class="container">
+      <div class="svc-detail__grid">
+        <div class="svc-detail__content">
+          <span class="svc-detail__num">02</span>
+          <h2>Done-For-You AWS Infrastructure Deployment</h2>
+          <p class="svc-detail__lead">
+            Production-ready cloud environments for teams that need to move fast
+            without hiring a full-time DevOps engineer.
+          </p>
+          <p>
+            We start with an architecture design session to understand your application,
+            traffic patterns, security requirements, and deployment workflows. Then we
+            build it — fully codified in Terraform, documented, and handed off with
+            monitoring already in place.
+          </p>
+
+          <div class="svc-detail__deliverables">
+            <h3>What you get</h3>
+            <ul class="deliverable-list">
+              <li>AWS Account Structure &amp; Network Design</li>
+              <li>EKS, ECS, or EC2 Compute Platform</li>
+              <li>CI/CD Pipeline Integration</li>
+              <li>Monitoring &amp; Alerting Stack</li>
+              <li>Terraform IaC Repository</li>
+              <li>Documentation &amp; Runbook</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Deployment Pricing Tiers -->
+      <h3 class="pricing__category">Choose your tier</h3>
+      <div class="pricing__grid">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Forge Starter</h4>
+            <div class="pricing-card__price">$3,500</div>
+          </div>
+          <p class="pricing-card__fit">Early-stage startups, MVPs, and internal tools</p>
+          <ul class="pricing-card__features">
+            <li>Single environment</li>
+            <li>ECS Fargate + ALB</li>
+            <li>One data store (RDS or ElastiCache)</li>
+            <li>VPC with public/private subnets</li>
+            <li>Full security baseline included</li>
+            <li>CI/CD pipeline</li>
+            <li>Documentation + runbook</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-card--popular">
+          <div class="pricing-card__header">
+            <h4>Forge Standard</h4>
+            <div class="pricing-card__price">$6,500</div>
+          </div>
+          <p class="pricing-card__fit">Growing SaaS companies preparing for production or compliance</p>
+          <ul class="pricing-card__features">
+            <li>Staging + production environments</li>
+            <li>ECS Fargate + ALB</li>
+            <li>RDS Multi-AZ + ElastiCache</li>
+            <li>Prometheus, Grafana, AlertManager</li>
+            <li>CIS Benchmark + Security Hub</li>
+            <li>Human access IAM roles</li>
+            <li>All four CI/CD pipeline templates</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Forge Enterprise</h4>
+            <div class="pricing-card__price">$10,000 – $15,000</div>
+          </div>
+          <p class="pricing-card__fit">Regulated workloads, compliance-driven, Kubernetes platform</p>
+          <ul class="pricing-card__features">
+            <li>EKS with managed node groups + full add-ons</li>
+            <li>IRSA for all workloads</li>
+            <li>Aurora Multi-AZ + ElastiCache replication</li>
+            <li>KMS customer-managed keys</li>
+            <li>PCI DSS / HIPAA / NIST standards</li>
+            <li>2hr architecture review session</li>
+            <li>30-day post-deployment support</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing__baseline-note">
+        Every deployment tier includes a full security baseline as standard — WAF, Secrets Manager, AWS Backup, VPC endpoints, Container Insights, CI/CD, and least-privilege IAM. Security is never an upsell.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAIL: TROUBLESHOOTING -->
+  <section class="svc-detail" id="troubleshooting">
+    <div class="container">
+      <div class="svc-detail__grid">
+        <div class="svc-detail__content">
+          <span class="svc-detail__num">03</span>
+          <h2>Troubleshooting &amp; Operational Support</h2>
+          <p class="svc-detail__lead">
+            Your cluster is on fire. We put it out, find the root cause, and make sure
+            it doesn't happen again.
+          </p>
+          <p>
+            We follow a structured three-phase diagnostic workflow: gather telemetry,
+            analyze metrics and event timelines, then deliver a root cause analysis
+            with clear remediation steps.
+          </p>
+
+          <div class="svc-detail__scenarios">
+            <h3>Common scenarios we handle</h3>
+            <div class="scenario-tags">
+              <span class="tag">CrashLoopBackOff</span>
+              <span class="tag">Image Pull Failures</span>
+              <span class="tag">DNS Resolution</span>
+              <span class="tag">Load Balancer Misconfig</span>
+              <span class="tag">Autoscaling Failures</span>
+              <span class="tag">CI/CD Pipeline Issues</span>
+              <span class="tag">Resource Exhaustion</span>
+              <span class="tag">Cluster Performance</span>
+              <span class="tag">Networking Failures</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Troubleshooting Pricing Tiers -->
+      <h3 class="pricing__category">Choose your engagement</h3>
+      <div class="pricing__grid">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Hourly Consulting</h4>
+            <div class="pricing-card__price">$200/hr</div>
+          </div>
+          <p class="pricing-card__fit">Ad-hoc troubleshooting, architecture questions, config review</p>
+          <ul class="pricing-card__features">
+            <li>Pay as you go</li>
+            <li>No minimum commitment</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4>Troubleshooting Sprint</h4>
+            <div class="pricing-card__price">$1,500 – $3,000</div>
+          </div>
+          <p class="pricing-card__fit">Structured 2–3 day diagnostic engagement</p>
+          <ul class="pricing-card__features">
+            <li>Root cause analysis</li>
+            <li>Written remediation report</li>
+            <li>Fixed scope and timeline</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-card--popular">
+          <div class="pricing-card__header">
+            <h4>Monthly Retainer</h4>
+            <div class="pricing-card__price">$3,000/mo</div>
+          </div>
+          <p class="pricing-card__fit">Ongoing support with priority response</p>
+          <ul class="pricing-card__features">
+            <li>15 hours on-call support</li>
+            <li>1 infrastructure review per month</li>
+            <li>Priority response</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- COMPARISON TABLE -->
   <section class="comparison">
     <div class="container">
@@ -313,46 +313,46 @@
           <thead>
             <tr>
               <th></th>
+              <th>Audit</th>
               <th>Deployment</th>
               <th>Troubleshooting</th>
-              <th>Audit</th>
               <th>Retainer</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Best for</td>
+              <td>Cost &amp; complexity</td>
               <td>New environments</td>
               <td>Production issues</td>
-              <td>Cost &amp; complexity</td>
               <td>Ongoing support</td>
             </tr>
             <tr>
               <td>Timeline</td>
+              <td>1–2 weeks</td>
               <td>2–4 weeks</td>
               <td>1–5 days</td>
-              <td>1–2 weeks</td>
               <td>Monthly</td>
             </tr>
             <tr>
               <td>Deliverable</td>
+              <td>Optimization roadmap</td>
               <td>Working infra + IaC</td>
               <td>RCA report + remediation</td>
-              <td>Optimization roadmap</td>
               <td>Priority support + monthly review</td>
             </tr>
             <tr>
               <td>Starting price</td>
+              <td>$1,500</td>
               <td>$3,500</td>
               <td>$200/hr</td>
-              <td>$1,500</td>
               <td>$3,000/mo</td>
             </tr>
             <tr>
               <td>Guarantee</td>
-              <td>—</td>
-              <td>—</td>
               <td>✓ Money-back</td>
+              <td>—</td>
+              <td>—</td>
               <td>—</td>
             </tr>
           </tbody>
@@ -422,9 +422,9 @@
         <div class="footer__col">
           <h4>Services</h4>
           <ul>
+            <li><a href="#">Architecture Audit</a></li>
             <li><a href="#">Infrastructure Deployment</a></li>
             <li><a href="#">Troubleshooting &amp; Support</a></li>
-            <li><a href="#">Architecture Audit</a></li>
           </ul>
         </div>
         <div class="footer__col">
