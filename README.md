@@ -1,6 +1,6 @@
-# CloudForge Consulting — Website Mockups
+# CloudVero Consulting — Website Mockups
 
-HTML/CSS mockups for the CloudForge Consulting website.
+HTML/CSS mockups for the CloudVero Consulting website.
 
 ## Pages
 
@@ -18,7 +18,7 @@ Full-page screenshots are in `/screenshots` for sharing and review.
 
 ## Color Palette
 
-Derived from the CloudForge logo:
+Derived from the CloudVero logo:
 
 - Steel Blue `#3da8d5` — primary accent, links, buttons
 - Forge Orange `#f5a623` — highlights, pricing, category labels
@@ -31,4 +31,4 @@ Open any `.html` file directly in a browser — no build step required.
 
 ## Assets
 
-Place the logo file at `assets/cloudforgelogo.PNG`.
+Place the logo file at `assets/cloudverologo.PNG`.
