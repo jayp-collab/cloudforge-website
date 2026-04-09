@@ -135,17 +135,21 @@
 }
 
 .avatar-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--orange), var(--cyan));
+  background: var(--navy-mid);
+  border: 2px solid rgba(61,168,213,0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--navy);
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.avatar-placeholder svg {
+  width: 70%;
+  height: 70%;
 }
 
 .founder-card h3 {
