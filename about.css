@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.hero-split__text .section-eyebrow {
+  margin-bottom: 28px;
+}
+
 .hero-split__text .page-hero__title {
   text-align: left;
 }
