@@ -77,6 +77,17 @@
               </select>
             </div>
             <div class="form-group">
+              <label for="hosting">Where is your application currently hosted?</label>
+              <select id="hosting" name="hosting" required>
+                <option value="">Select an option</option>
+                <option value="not-deployed">Not deployed yet</option>
+                <option value="local">Running locally only</option>
+                <option value="cloud">Deployed in the cloud (AWS, Azure, GCP)</option>
+                <option value="on-prem">On-premise / private servers</option>
+                <option value="unsure">Not sure</option>
+              </select>
+            </div>
+            <div class="form-group">
               <label for="message">Tell us about your situation</label>
               <textarea id="message" name="message" rows="5" placeholder="What challenges are you facing? What does your current environment look like?"></textarea>
             </div>
