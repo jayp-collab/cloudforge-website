@@ -49,24 +49,25 @@
         <!-- Contact Form -->
         <div class="contact__form-wrap">
           <h2>Send us a message</h2>
-          <form class="contact-form" name="contact" method="POST" onsubmit="return false;" data-netlify="true">
+          <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name" required>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
               </div>
               <div class="form-group">
                 <label for="company">Company</label>
-                <input type="text" id="company" placeholder="Company name">
+                <input type="text" id="company" name="company" placeholder="Company name">
               </div>
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" placeholder="you@company.com" required>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
             </div>
             <div class="form-group">
               <label for="service">How can we support you?</label>
-              <select id="service">
+              <select id="service" name="service">
                 <option value="">Select a service</option>
                 <option value="deployment">Launch &amp; Infrastructure Setup</option>
                 <option value="troubleshooting">Issue Resolution &amp; Performance Optimization</option>
@@ -77,7 +78,7 @@
             </div>
             <div class="form-group">
               <label for="message">Tell us about your situation</label>
-              <textarea id="message" rows="5" placeholder="What challenges are you facing? What does your current environment look like?"></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="What challenges are you facing? What does your current environment look like?"></textarea>
             </div>
             <button type="submit" class="btn btn--primary btn--large">Send Message</button>
             <p style="font-size: 0.78rem; color: var(--gray); margin-top: 10px;">We'll follow up with next steps and a short intake form to help us better understand your needs.</p>
