@@ -92,6 +92,11 @@ img { max-width: 100%; display: block; }
   padding: 10px 22px;
   font-size: 0.85rem;
 }
+.btn--nav:hover {
+  background: #2e8ab3;
+  color: #ffffff;
+  text-decoration: none;
+}
 
 .btn--large { padding: 18px 36px; font-size: 1.05rem; }
 
@@ -156,11 +161,12 @@ img { max-width: 100%; display: block; }
 }
 
 .nav__links a {
-  color: var(--gray-light);
+  color: var(--white);
   font-size: 0.9rem;
   font-weight: 500;
 }
-.nav__links a:hover { color: var(--white); text-decoration: none; }
+.nav__links a:hover { color: var(--cyan); text-decoration: none; }
+.nav__links .btn--nav:hover { color: #ffffff; }
 
 /* ================================================================
    HERO
