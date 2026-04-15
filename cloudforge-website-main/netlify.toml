@@ -1,0 +1,4 @@
+# This file tells netlify where to find functions to execute.
+
+[functions]
+  directory = "netlify/functions"
