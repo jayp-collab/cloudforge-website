@@ -142,6 +142,22 @@ Only answer questions related to CloudVero's services, team, pricing, and expert
     // saved response from Groq
     const data = await response.json();
 
+    if (!response.ok) {
+        console.error("Groq API error:", JSON.stringify(data));
+        return {
+            statusCode: 500,
+            body: JSON.stringify({ error: "Groq API error: " + (data.error?.message || JSON.stringify(data)) })
+        };
+    }
+
+    if (!data.choices || !data.choices[0]) {
+        console.error("Unexpected Groq response:", JSON.stringify(data));
+        return {
+            statusCode: 500,
+            body: JSON.stringify({ error: "Unexpected response from Groq." })
+        };
+    }
+
 
     return {
         statusCode: 200,
