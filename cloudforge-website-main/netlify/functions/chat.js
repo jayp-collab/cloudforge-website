@@ -131,7 +131,7 @@ Only answer questions related to CloudVero's services, team, pricing, and expert
             "Authorization": `Bearer ${process.env.GROQ_API_KEY}`
         },
         body: JSON.stringify({
-            model: "llama3-8b-8192",
+            model: "llama3-70b-8192",
             messages: [
                 { role: "system", content: systemPrompt },
                 { role: "user", content: message }
@@ -146,7 +146,7 @@ Only answer questions related to CloudVero's services, team, pricing, and expert
         console.error("Groq API error:", JSON.stringify(data));
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: "Groq API error: " + (data.error?.message || JSON.stringify(data)) })
+            body: JSON.stringify({ error: "I'm having trouble connecting right now. Please try again in a moment." })
         };
     }
 
@@ -154,7 +154,7 @@ Only answer questions related to CloudVero's services, team, pricing, and expert
         console.error("Unexpected Groq response:", JSON.stringify(data));
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: "Unexpected response from Groq." })
+            body: JSON.stringify({ error: "I'm having trouble connecting right now. Please try again in a moment." })
         };
     }
 
@@ -164,9 +164,10 @@ Only answer questions related to CloudVero's services, team, pricing, and expert
         body: JSON.stringify({ reply: data.choices[0].message.content })
     };
     } catch (error) {
+        console.error("Function error:", error);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: "Something went wrong. Please try again later."})
+            body: JSON.stringify({ error: "I'm having trouble connecting right now. Please try again in a moment."})
         };
     }
 }
