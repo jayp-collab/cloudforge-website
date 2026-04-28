@@ -411,6 +411,20 @@
   color: var(--gray-light);
 }
 
+.pricing-card__features > li > ul {
+   list-style-type: circle;
+   margin-top: 8px;
+   margin-left: 22px;
+   padding-left: 18px;
+}
+
+.pricing-card__features > li > ul > li {
+   list-style-type: circle;
+   margin-bottom: 6px;
+   padding-left: 0;
+}
+
+
 .pricing-card__features li::before {
   content: '✓ ';
   color: var(--cyan);
