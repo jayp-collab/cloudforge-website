@@ -343,8 +343,8 @@
 }
 
 .pricing__grid--two {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 760px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -439,6 +439,7 @@
 
   .pricing__grid--two {
     grid-template-columns: 1fr;
+    max-width: 480px;
   }
 }
 
