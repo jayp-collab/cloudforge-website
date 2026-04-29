@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: #0c1117; margin: 0; padding: 0; }
+  body { width: 1080px; height: 1080px; overflow: hidden; margin: 0 auto; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(145deg, #0c1117 0%, #141c25 50%, #0f1820 100%);
+    color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .bar { position: absolute; left: 0; right: 0; height: 5px; }
+  .bar--top { top: 0; background: linear-gradient(90deg, #3da8d5, #f5a623); }
+  .bar--bottom { bottom: 0; background: linear-gradient(90deg, #f5a623, #3da8d5); }
+  .corner { position: absolute; width: 45px; height: 45px; }
+  .c-tl { top: 25px; left: 25px; border-top: 2px solid rgba(61,168,213,0.3); border-left: 2px solid rgba(61,168,213,0.3); }
+  .c-tr { top: 25px; right: 25px; border-top: 2px solid rgba(61,168,213,0.3); border-right: 2px solid rgba(61,168,213,0.3); }
+  .c-bl { bottom: 25px; left: 25px; border-bottom: 2px solid rgba(61,168,213,0.3); border-left: 2px solid rgba(61,168,213,0.3); }
+  .c-br { bottom: 25px; right: 25px; border-bottom: 2px solid rgba(61,168,213,0.3); border-right: 2px solid rgba(61,168,213,0.3); }
+  .glow { position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); width: 650px; height: 650px; border-radius: 50%; background: radial-gradient(circle, rgba(61,168,213,0.08) 0%, transparent 70%); }
+  .c { position: relative; z-index: 1; text-align: center; padding: 0 80px; }
+  .logo { font-size: 24px; font-weight: 700; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 30px; }
+  .logo img { height: 60px; }
+  .shield { width: 65px; height: 65px; margin: 0 auto 25px; border: 3px solid #3da8d5; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(61,168,213,0.15); }
+  .shield span { font-size: 28px; color: #3da8d5; }
+  h1 { font-size: 44px; font-weight: 800; line-height: 1.2; }
+  .gbox { background: rgba(245,166,35,0.08); border: 1px solid rgba(245,166,35,0.25); border-radius: 12px; padding: 18px 35px; margin: 22px auto; max-width: 650px; }
+  .ck { font-size: 19px; color: #c0cdd8; padding: 8px 0; text-align: center; }
+  .ck span { color: #3da8d5; font-weight: 700; margin-right: 10px; }
+  .btn { display: inline-block; padding: 16px 40px; background: linear-gradient(135deg,#3da8d5,#2b8db8); color: #fff; font-size: 19px; font-weight: 700; border-radius: 12px; text-decoration: none; box-shadow: 0 8px 25px rgba(61,168,213,0.25); }
+</style>
+</head>
+<body>
+  <div class="bar bar--top"></div>
+    <div class="glow"></div>
+  <div class="corner c-tl"></div>
+  <div class="corner c-tr"></div>
+  <div class="corner c-bl"></div>
+  <div class="corner c-br"></div>
+  <div class="c">
+    <div class="logo"><img src="../assets/cloudverologo.png"> CLOUDVERO</div>
+    <div class="shield"><span>✓</span></div>
+    <h1 style="font-size:42px;">AWS Cost &amp; Infrastructure Audit</h1>
+    <h1>Delivered in 14 Days.</h1>
+    <div class="gbox"><div style="font-size:24px; font-weight:700; color:#f5a623;">Guaranteed Savings or Your Money Back</div><div style="font-size:15px; color:#8a9bae; margin-top:6px;">on your first audit engagement</div></div>
+    <div style="font-size:13px; color:#f5a623; letter-spacing:2px; margin-bottom:15px;">WHAT'S INCLUDED</div>
+    <div style="max-width:520px; margin:0 auto 30px;">
+      <div class="ck"><span>✓</span>Infrastructure utilization analysis</div>
+      <div class="ck"><span>✓</span>Architecture complexity review</div>
+      <div class="ck"><span>✓</span>Cost optimization roadmap</div>
+      <div class="ck"><span>✓</span>Security posture assessment</div>
+      <div class="ck"><span>✓</span>Detailed findings report + debrief call</div>
+    </div>
+    <div style="color:#8a9bae; font-size:17px; margin-bottom:5px;">Starting from</div>
+    <div style="font-size:48px; font-weight:800; color:#3da8d5; margin-bottom:22px;">$1,500</div>
+    <a class="btn" style="margin-bottom:22px;">See How Much You're Overspending →</a>
+    <div style="font-size:15px; color:#5a6a7a;">cloudvero-consulting.io</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudVero — Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-img-wrap"><img src="assets/cloudverologo.png" alt="CloudVero logo" class="nav__logo-img"></div> CloudVero
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__active">Contact Us</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h1 class="page-hero__title">Let's discuss how we can help you build, scale, and optimize your cloud infrastructure with confidence.</h1>
+      <p class="page-hero__subtitle">
+        Whether you're launching a new application, troubleshooting issues, or optimizing existing infrastructure, we're here to help you move forward with clarity.
+        We'd love to hear from you.
+      </p>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrap">
+          <h2>Send us a message</h2>
+          <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Company name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="service">How can we support you?</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="deployment">Launch &amp; Infrastructure Setup</option>
+                <option value="troubleshooting">Issue Resolution &amp; Performance Optimization</option>
+                <option value="audit">Architecture Review &amp; Cost Optimization Audit</option>
+                <option value="retainer">Ongoing Support &amp; Managed Services</option>
+                <option value="other">Not sure yet - need guidance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="hosting">Where is your application currently hosted?</label>
+              <select id="hosting" name="hosting" required>
+                <option value="">Select an option</option>
+                <option value="not-deployed">Not deployed yet</option>
+                <option value="local">Running locally only</option>
+                <option value="cloud">Deployed in the cloud (AWS, Azure, GCP)</option>
+                <option value="on-prem">On-premise / private servers</option>
+                <option value="unsure">Not sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your situation</label>
+              <textarea id="message" name="message" rows="5" placeholder="What challenges are you facing? What does your current environment look like?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--large">Send Message</button>
+            <p style="font-size: 0.78rem; color: var(--gray); margin-top: 10px;">We'll follow up with next steps and a short intake form to help us better understand your needs.</p>
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact__info">
+          <div class="contact__info-card">
+            <h3>Need urgent support? Book a strategic call</h3>
+            <p>Skip the form and speak with us directly. In this free 30-minute call, we'll understand your goals, identify key challenges, and outline the best path forward.</p>
+            <a href="https://calendar.app.google/xU6pKsD3CJ1cpaQC8" target="_blank" class="btn btn--ghost">Book Your Free Call →</a>
+            <p style="margin-top: 16px;">No commitment. Just clarity on your next steps.</p>
+            <p style="font-size: 0.78rem; color: var(--gray); margin-top: 10px;">Note: A brief intake form will be sent via email in preparation for your scheduled call.</p>
+          </div>
+
+          <div class="contact__info-card">
+            <h3>Response time</h3>
+            <p>We typically respond within 24 hours on business days. If you're experiencing a production issue, we recommend booking a call for rapid engagement.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo-img-wrap"><img src="assets/cloudverologo.png" alt="CloudVero logo" class="nav__logo-img"></div> <strong>CloudVero</strong>
+          <p>Cloud infrastructure and DevOps consulting for engineering teams of every size.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Architecture Audit</a></li>
+            <li><a href="services.html">Infrastructure Deployment</a></li>
+            <li><a href="services.html">Troubleshooting &amp; Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 CloudVero Consulting LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function() {
+      const nav = document.querySelector('.nav__links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav__links--open');
+    });
+  </script>
+
+  <script>
+    // Theme toggle
+    (function() {
+      var saved = localStorage.getItem('cf-theme');
+      if (saved === 'light') document.body.classList.add('light');
+      
+      var btn = document.querySelector('.theme-toggle');
+      btn.textContent = document.body.classList.contains('light') ? '🌙' : '☀️';
+      
+      btn.addEventListener('click', function() {
+        document.body.classList.toggle('light');
+        var isLight = document.body.classList.contains('light');
+        localStorage.setItem('cf-theme', isLight ? 'light' : 'dark');
+        btn.textContent = isLight ? '🌙' : '☀️';
+      });
+    })();
+  </script>
+
+  <script src="/chat-widget.js"></script>
+
+</body>
+</html>

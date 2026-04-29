@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudVero — About Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-img-wrap"><img src="assets/cloudverologo.png" alt="CloudVero logo" class="nav__logo-img"></div> CloudVero
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#" class="nav__active">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="hero-split">
+        <div class="hero-split__text">
+          <p class="section-eyebrow">About CloudVero</p>
+          <h1 class="page-hero__title">We've been on the other side<br>of the infrastructure problem.</h1>
+          <p class="page-hero__subtitle">
+            CloudVero was founded by experienced DevOps professionals with extensive, hands-on expertise within AWS environments. Having supported organizations of all sizes, from innovative startups to Fortune 500 enterprises, we've worked directly alongside teams to resolve production issues in real-time, implement scalable solutions, optimize cloud costs using best practices, and build infrastructure that is reliable and maintainable. We created CloudVero to bring that same level of operational excellence and strategic guidance directly to the organizations that need it most.
+          </p>
+        </div>
+        <div class="hero-split__video">
+          <video controls playsinline preload="metadata" poster="assets/promo-poster.jpg">
+            <source src="assets/cloudvero_company_promo.mp4" type="video/mp4">
+            <source src="assets/cloudvero_company_promo.mov#t=2" type="video/quicktime">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ORIGIN STORY -->
+  <section class="origin">
+    <div class="container">
+      <div class="origin__grid">
+        <div class="origin__text">
+          <h2>Common Customer Pains We've Observed</h2>
+          <p>
+            During our time at AWS, we partnered with engineering teams of all sizes, but a few things remained the same. The pattern was remarkably consistent: organizations adopted Kubernetes as the industry standard, without fully accounting for the operational complexity that comes with it.
+          </p>
+          <p>
+            Engineers hired to build product features were quickly in deep cluster troubleshooting scenarios — debugging pod failures, chasing networking issues, and deciphering YAML configurations, often without sufficient Kubernetes experience. Many were forced to learn in real time during active production incidents, costing the company thousands of dollars per minute of downtime. The cognitive load of managing a platform they never signed up to own was burning teams out, slowing delivery, and driving cloud costs higher than desired.
+          </p>
+          <p>
+            We built CloudVero to give these teams something they couldn't easily find: honest, experienced infrastructure guidance from people who've seen what works and what doesn't — at every scale.
+          </p>
+        </div>
+        <div class="origin__values">
+          <div class="value-card">
+            <h3><span class="value-check">✓</span> Simplicity over complexity</h3>
+            <p>We design for what your business actually needs — not what looks impressive on a conference slide. In our experience, the best architecture is the one your team can operate, scale, and maintain with confidence.</p>
+          </div>
+          <div class="value-card">
+            <h3><span class="value-check">✓</span> You own the outcome</h3>
+            <p>Every engagement delivers infrastructure you fully control — including Terraform code, documentation, and operational runbooks. No obligated vendor lock-in, no hidden dependencies.</p>
+          </div>
+          <div class="value-card">
+            <h3><span class="value-check">✓</span> Direct, Honest guidance</h3>
+            <p>If you don't need Kubernetes, we'll tell you. If a simpler solution is a better fit, we'll recommend it. Our expert guidance is driven by your needs, not our preferences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="mission-vision">
+    <div class="container">
+      <div class="mv__grid">
+        <div class="mv__card">
+          <p class="section-eyebrow">Our Mission</p>
+          <p class="mv__text">
+            CloudVero exists to simplify cloud infrastructure for modern engineering teams.
+            We help organizations cut through complexity, build reliable systems, and focus
+            on what matters most.
+          </p>
+          <p class="mv__text">
+            We believe great work is an act of service. We approach every engagement with
+            integrity, clarity, and a commitment to doing the work right — delivering
+            solutions we stand behind.
+          </p>
+        </div>
+        <div class="mv__card">
+          <p class="section-eyebrow">Our Vision</p>
+          <p class="mv__text">
+            We aim to continue building with purpose. To evolve CloudVero from a consulting
+            firm into a platform — building tools, automation, and systems that solve real
+            infrastructure challenges at scale while staying grounded in the values that
+            guide our work, and committed to serving others with purpose and integrity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDERS -->
+  <section class="founders">
+    <div class="container">
+      <p class="section-eyebrow">The team</p>
+      <h2 class="section-title" style="text-align:center;">Founded by engineers, for engineers.</h2>
+      <div class="founders__grid">
+
+        <div class="founder-card">
+          <!-- <div class="founder-card__avatar">
+            <img src="assets/jason.jpeg" alt="Jason Phillip" class="founder-card__photo">
+          </div> -->
+          <h3>Jason</h3>
+          <p class="founder-card__role">Co-Founder</p>
+          <p class="founder-card__bio">
+            Platform engineer and cloud infrastructure specialist focused on building scalable,
+            production-ready systems. Jason works across Kubernetes , AWS, and DevOps environments
+            to design resilient architectures, streamline deployments, and solve complex cloud 
+            infrastructure challenges. His years of experience include working as a tenured cloud
+            professional at Amazon Web Services (AWS), where he supported large-scale cloud environments
+            and enterprise workloads. 
+          </p>
+        </div>
+
+        <div class="founder-card">
+          <!-- <div class="founder-card__avatar">
+            <img src="assets/domonic.JPG" alt="Domonic Neal" class="founder-card__photo founder-card__photo--top">
+          </div> -->
+          <h3>Domonic</h3>
+          <p class="founder-card__role">Co-Founder</p>
+          <p class="founder-card__bio">
+            Cloud and DevOps engineer focused on building scalable, automated, and production-ready systems with operational
+            excellence. In his many years of experience as a former senior cloud professional at Amazon Web Services (AWS), 
+            Domonic has a strong background in building and supporting modern cloud environments using AWS, CI/CD, 
+            and infrastructure as code at scale to meet customer business needs.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="certifications">
+    <div class="container">
+      <p class="section-eyebrow">Industry Certifications</p>
+      <h2 class="section-title" style="text-align:center;">Expert-Level Certifications Across Modern Cloud Platforms</h2>
+      <div class="certs-float">
+        <div class="certs-float__item">
+          <img src="assets/badge-cka.png" alt="CKA: Certified Kubernetes Administrator" class="certs-float__badge">
+        </div>
+        <div class="certs-float__item">
+          <img src="assets/badge-aws-dev-associate.png" alt="AWS Certified Developer Associate" class="certs-float__badge">
+        </div>
+        <div class="certs-float__item">
+          <img src="assets/badge-aws-devops-pro.png" alt="AWS Certified DevOps Engineer Professional" class="certs-float__badge">
+        </div>
+        <div class="certs-float__item">
+          <img src="assets/badge-aws-sa-associate.png" alt="AWS Certified Solutions Architect Associate" class="certs-float__badge">
+        </div>
+        <div class="certs-float__item">
+          <img src="assets/badge-kcna.png" alt="KCNA: Kubernetes and Cloud Native Associate" class="certs-float__badge">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech-stack">
+    <div class="container">
+      <p class="section-eyebrow">Our toolkit</p>
+      <h2 class="section-title" style="text-align:center;">Technologies we work with every day.</h2>
+      <p class="tech-stack__subtitle">Every engagement requires the right tools for the job. Here are just a few we've used across successful client engagements.</p>
+
+      <div class="toolkit-stream">
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">☁️ Cloud</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">AWS</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">⚙️ Orchestration</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">Kubernetes</span>
+            <span class="tool-chip">Helm</span>
+            <span class="tool-chip">Docker</span>
+            <span class="tool-chip">AWS ECS</span>
+            <span class="tool-chip">AWS EKS</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">🏗️ IaC</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">Terraform</span>
+            <span class="tool-chip">CloudFormation</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">🔄 CI/CD</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">GitHub Actions</span>
+            <span class="tool-chip">GitLab CI</span>
+            <span class="tool-chip">ArgoCD</span>
+            <span class="tool-chip">AWS CodePipeline</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">📊 Observability</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">Prometheus</span>
+            <span class="tool-chip">Grafana</span>
+            <span class="tool-chip">AWS CloudWatch</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">🔒 Security</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">GuardDuty</span>
+            <span class="tool-chip">Security Hub</span>
+            <span class="tool-chip">AWS Config</span>
+            <span class="tool-chip">AWS WAF</span>
+            <span class="tool-chip">IAM Identity Center</span>
+            <span class="tool-chip">Trivy</span>
+            <span class="tool-chip">SonarQube</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">💻 Languages</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">Go</span>
+            <span class="tool-chip">Python</span>
+            <span class="tool-chip">Bash</span>
+          </div>
+        </div>
+        <div class="toolkit-lane">
+          <div class="toolkit-lane__label">📂 Source Control</div>
+          <div class="toolkit-lane__items">
+            <span class="tool-chip">GitHub</span>
+            <span class="tool-chip">GitLab</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Let's talk about your infrastructure.</h2>
+      <p>We're engineers first. Book a call and we'll have a real technical conversation about what you're building and how we can help.</p>
+      <a href="contact.html" class="btn btn--primary btn--large">Book Your Free Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo-img-wrap"><img src="assets/cloudverologo.png" alt="CloudVero logo" class="nav__logo-img"></div> <strong>CloudVero</strong>
+          <p>Cloud infrastructure and DevOps consulting for engineering teams of every size.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Architecture Audit</a></li>
+            <li><a href="#">Infrastructure Deployment</a></li>
+            <li><a href="#">Troubleshooting &amp; Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 CloudVero Consulting LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function() {
+      const nav = document.querySelector('.nav__links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav__links--open');
+    });
+  </script>
+
+  <script>
+    // Theme toggle
+    (function() {
+      var saved = localStorage.getItem('cf-theme');
+      if (saved === 'light') document.body.classList.add('light');
+      
+      var btn = document.querySelector('.theme-toggle');
+      btn.textContent = document.body.classList.contains('light') ? '🌙' : '☀️';
+      
+      btn.addEventListener('click', function() {
+        document.body.classList.toggle('light');
+        var isLight = document.body.classList.contains('light');
+        localStorage.setItem('cf-theme', isLight ? 'light' : 'dark');
+        btn.textContent = isLight ? '🌙' : '☀️';
+      });
+    })();
+  </script>
+
+  <script src="/chat-widget.js"></script>
+
+</body>
